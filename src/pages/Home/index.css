@@ -1,0 +1,40 @@
+.Home {
+  text-align: center;
+}
+
+.Home-form button {
+  background-color: white;
+  border: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: inherit;
+}
+
+.Home-form input {
+  font-size: inherit;
+}
+
+.Home-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Home-instructions {
+  max-width: 80%;
+}
+
+.Home-link {
+  color: #61dafb;
+}
+
+.Home-logo {
+  height: 40vmin;
+  padding-bottom: 50px;
+  pointer-events: none;
+}

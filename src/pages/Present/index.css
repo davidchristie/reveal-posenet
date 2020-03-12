@@ -1,0 +1,86 @@
+.Present-slides {
+  border: none;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+
+#output {
+  height: 100vh;
+  opacity: 0.6;
+  pointer-events: none;
+  position: fixed;
+  width: 100vw;
+}
+
+#slides {
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+}
+
+.footer-text {
+  max-width: 600px;
+  text-align: center;
+  margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-text,
+  .dg {
+    display: none;
+  }
+}
+
+/*
+     *  The following loading spinner CSS is from SpinKit project
+     *  https://github.com/tobiasahlin/SpinKit
+     */
+.sk-spinner-pulse {
+  width: 20px;
+  height: 20px;
+  margin: auto 10px;
+  float: left;
+  background-color: #333;
+  border-radius: 100%;
+  -webkit-animation: sk-pulseScaleOut 1s infinite ease-in-out;
+  animation: sk-pulseScaleOut 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-pulseScaleOut {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-pulseScaleOut {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.spinner-text {
+  float: left;
+}
